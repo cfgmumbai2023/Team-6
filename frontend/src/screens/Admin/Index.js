@@ -16,9 +16,43 @@ const Index = () => {
         }
         // if (credentials)
     }
+    const data=[
+        {
+            "description":"sfgtyui",
+            "name" : "ahha",
+            "approved" : "jhfrgf",
+            "class" : "gcbyus",
+            "link" : "www.google.com",
+            "tag" : "ejbgucrsngnuk"
+        },
+        {
+            "description":"sfgtyui",
+            "name" : "ahha",
+            "approved" : "jhfrgf",
+            "class" : "gcbyus",
+            "link" : "www.google.com",
+            "tag" : "ejbgucrsngnuk"
+        },
+        {
+            "description":"sfgtyui",
+            "name" : "ahha",
+            "approved" : "jhfrgf",
+            "class" : "gcbyus",
+            "link" : "www.twitter.com",
+            "tag" : "ejbgucrsngnuk"
+        },
+        {
+            "description":"sfgtyui",
+            "name" : "ahha",
+            "approved" : "jhfrgf",
+            "class" : "gcbyus",
+            "link" : "www.google.com",
+            "tag" : "ejbgucrsngnuk"
+        }
+    ]
     return (
         <div>
-            <Card/>
+            {data.map((temp)=><Card pep={temp}/>)}
         </div>
     )
 }
