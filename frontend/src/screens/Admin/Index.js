@@ -18,36 +18,36 @@ const Index = () => {
     }
     const data=[
         {
-            "description":"sfgtyui",
-            "name" : "ahha",
-            "approved" : "jhfrgf",
-            "class" : "gcbyus",
+            "description":"Photosynthesis",
+            "name" : "Video 1",
+            "approved" : "false",
+            "class" : "9",
             "link" : "www.google.com",
-            "tag" : "ejbgucrsngnuk"
+            "tag" : "Science "
         },
         {
-            "description":"sfgtyui",
-            "name" : "ahha",
-            "approved" : "jhfrgf",
-            "class" : "gcbyus",
+            "description":"Convex Lens",
+            "name" : "Video 2",
+            "approved" : "false",
+            "class" : "11",
             "link" : "www.google.com",
-            "tag" : "ejbgucrsngnuk"
+            "tag" : "Science "
         },
         {
-            "description":"sfgtyui",
-            "name" : "ahha",
-            "approved" : "jhfrgf",
-            "class" : "gcbyus",
-            "link" : "www.twitter.com",
-            "tag" : "ejbgucrsngnuk"
+            "description":"Integration",
+            "name" : "Video 3",
+            "approved" : "false",
+            "class" : "9",
+            "link" : "www.google.com",
+            "tag" : "Maths "
         },
         {
-            "description":"sfgtyui",
-            "name" : "ahha",
-            "approved" : "jhfrgf",
-            "class" : "gcbyus",
+            "description":"Photosynthesis",
+            "name" : "Video 4",
+            "approved" : "false",
+            "class" : "9",
             "link" : "www.google.com",
-            "tag" : "ejbgucrsngnuk"
+            "tag" : "Science "
         }
     ]
     return (

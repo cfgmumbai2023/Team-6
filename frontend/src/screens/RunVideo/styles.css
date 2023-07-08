@@ -1,0 +1,25 @@
+.comp {
+    text-align: center;
+}
+
+.container {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.comp {
+    float: left;
+}
+
+.list-group-item {
+    margin: 10%;
+    border: 0;
+}
+
+.list-group {
+    float: right;
+    width: 100%;
+}

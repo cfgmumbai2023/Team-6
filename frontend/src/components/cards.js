@@ -8,7 +8,7 @@ const Card = (props) => {
     };
   return (
     <table class="table">
-  <thead>
+  {/* <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Topic</th>
@@ -16,7 +16,7 @@ const Card = (props) => {
       <th scope="col">View</th>
       <th scope="col">Action</th>
     </tr>
-  </thead>
+  </thead> */}
   <tbody>
     <tr>
     <th scope="row">1</th>
