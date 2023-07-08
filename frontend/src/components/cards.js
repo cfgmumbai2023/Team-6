@@ -19,7 +19,7 @@ const Card = (props) => {
       <td>class</td>
       <td><Link to="/" class="btn btn-primary">View</Link></td>
       <td>
-        <Link to="/" class="btn btn-primary">Approve</Link>
+        <Link to="/" class="btn btn-primary mx-3">Approve</Link>
         <Link to="/" class="btn btn-danger">Reject</Link>
       </td>
     </tr>
@@ -27,9 +27,9 @@ const Card = (props) => {
     <th scope="row">1</th>
       <td>topic name</td>
       <td>class</td>
-      <td><Link to="/" class="btn btn-primary">View</Link></td>
+      <td><Link to="/" class="btn btn-primary ">View</Link></td>
       <td>
-        <Link to="/" class="btn btn-primary">Approve</Link>
+        <Link to="/" class="btn btn-primary mx-3">Approve</Link>
         <Link to="/" class="btn btn-danger">Reject</Link>
       </td>
     </tr>
@@ -37,9 +37,9 @@ const Card = (props) => {
     <th scope="row">1</th>
       <td>topic name</td>
       <td>class</td>
-      <td><Link to="/" class="btn btn-primary">View</Link></td>
+      <td><Link to="/" class="btn btn-primary ">View</Link></td>
       <td>
-        <Link to="/" class="btn btn-primary">Approve</Link>
+        <Link to="/" class="btn btn-primary mx-3">Approve</Link>
         <Link to="/" class="btn btn-danger">Reject</Link>
       </td>
     </tr>
