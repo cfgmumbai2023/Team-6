@@ -25,17 +25,17 @@ const UserSchema = new mongoose.Schema({
         min: 5,
         required: false,
     },
-    contactNumber:{
-        type:Number,
-        min:10,
-        max:10,
-        required:true,
+    contactNumber: {
+        type: Number,
+        min: 1000000000,
+        max: 9999999999,
+        required: true,
     },
-    role:{
-        type:String,
-        required:true
+    role: {
+        type: String,
+        required: true
     }
 }
 )
-const User=mongoose.model("User",UserSchema);
+const User = mongoose.model("User", UserSchema);
 export default User;

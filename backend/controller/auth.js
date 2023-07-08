@@ -11,10 +11,8 @@ export const register = async (req, res) => {
             lastName,
             email,
             password,
-            picturePath,
-            friend,
-            location,
-            occupation,
+            contactNumber,
+            role
         } = req.body;
         const salt = await bcrypt.genSalt();
         const passwordHash = await bcrypt.hash(password, salt);
@@ -23,15 +21,16 @@ export const register = async (req, res) => {
             lastName,
             email,
             password: passwordHash,
-            picturePath,
-            friend,
-            location,
-            occupation,
-            viewedProfile: Math.floor(Math.random() * 1000),
-            impressions: Math.floor(Math.random() * 1000),
+            contactNumber,
+            role
         })
         const savedUser = await newUser.save();
-        res.status(201).json(savedUser);
+        const data = {
+            id: savedUser._id,
+        }
+        const token = jwt.sign(data, process.env.JWT_SECRET);
+        res.status(201).json(token);
+
     }
     catch (err) {
         // console.log(`${err} Error has occured bitch`)
