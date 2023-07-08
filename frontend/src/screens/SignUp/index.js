@@ -42,16 +42,20 @@ const Index = () => {
                 <select onChange={changeHandler} className="form-select" name="role" id="role" aria-label=".form-select-lg example" value={credentials.role}>
                     <option >Open this select menu</option>
                     <option value="1">Admin</option>
-                    <option value="2">User</option>
-                    <option value="3">Content Creator</option>
+                    <option value="2">Content Creator</option>
+                    <option value="3">Student</option>
                 </select>
+                {credentials.role == 4 && <div className="form-group my-2">
+                    <label htmlFor="exampleInputPassword1">School Code</label>
+                    <input type="schoolCode" onChange={changeHandler} className="form-control" name="schoolCode" id="schoolCode" placeholder="School Code" value={credentials.password} />
+                </div>}
                 <button type="submit" className="btn btn-primary my-4">Submit</button>
             </form>
             <div className="text-center">
                 <p>Already a member? <Link to="/Login">Login</Link></p>
             </div>
+
         </div>
     )
 }
-
-export default Index
+export default Index;
