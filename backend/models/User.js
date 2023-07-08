@@ -18,7 +18,6 @@ const UserSchema = new mongoose.Schema({
         type: String,
         min: 5,
         required: true,
-        unique: true,
     },
     password: {
         type: String,
@@ -30,6 +29,7 @@ const UserSchema = new mongoose.Schema({
         min: 1000000000,
         max: 9999999999,
         required: true,
+        unique: true,
     },
     role: {
         type: String,
