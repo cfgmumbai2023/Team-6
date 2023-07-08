@@ -36,7 +36,7 @@ const Index = () => {
                 </div>
                 <div className="form-group my-2">
                     <label required={"true"} htmlFor="exampleInputPassword1">Retype password</label>
-                    <input type="password" onChange={changeHandler} className="form-control" id="cpassword" name="cpassword" placeholder="Retype password" value={credentials.cpassword} />
+                    <input type="videoLink" onChange={changeHandler} className="form-control" id="cpassword" name="cpassword" placeholder="Retype password" value={credentials.cpassword} />
                 </div>
                 <label htmlFor="exampleInputPassword1 mt-3">Select Role</label>
                 <select onChange={changeHandler} className="form-select" name="role" id="role" aria-label=".form-select-lg example" value={credentials.role}>
