@@ -14,6 +14,7 @@ const Index = () => {
         }
         // if (credentials)
     }
+    const data = [];
     return (
         <div>
             <form>
