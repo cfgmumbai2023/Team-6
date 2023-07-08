@@ -1,33 +1,30 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
-import Navbar from "./screens/Navbar"
-import SignUp from "./screens/SignUp"
-import Home from "./screens/HomePage"
-import Login from "./screens/Login"
-import About from "./screens/About"
-import VideoAddition from "./screens/VideoAddition"
-import Admin from "./screens/Admin"
+
+import "./style.css";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from "./Pages/AboutUs";
+import Admin from "./Pages/Admin";
+import UnapprovedRequests from "./Pages/UnapprovedRequests";
+
 function App() {
+  
 
   return (
-    <>
-      <Router>
-        <Navbar />
-        <div className='container'>
-          <Routes>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/Signup" element={<SignUp />}></Route>
-            <Route path="/Login" element={<Login />}></Route>
-            <Route path="/VideoAddition" element = {<VideoAddition />}></Route>
-            <Route path="/Admin" element={<Admin />}></Route>
-          </Routes>
-        </div>
-      </Router>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'   >
+          <Route index element={<Home />}/>
+          <Route path="about-us" element={<AboutUs />}/>
+          <Route path="/admin" element={<Admin />}/>
+          <Route path="/admin/unapproved-requests" element={<UnapprovedRequests />}/>
+          <Route path='login' element={<Login />}></Route>
+          <Route path='register' element={<Register />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
