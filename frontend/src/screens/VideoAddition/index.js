@@ -8,7 +8,9 @@ const Index = () => {
         console.log(e.target.name, e.target.value)
     }
     const handleSubmit = (e) => {
+        console.log()
         e.preventDefault();
+        console.log(credentials);
         if (credentials.cpassword !== credentials.password) {
             return;
         }
@@ -60,7 +62,7 @@ const Index = () => {
                     <option>5</option>
                     </select>
                 </div>
-                <button type="submit" className="btn btn-primary my-4">Submit</button>
+                <button type="button" onClick={handleSubmit} className="btn btn-primary my-4">Submit</button>
             </form>
         </div>
     )

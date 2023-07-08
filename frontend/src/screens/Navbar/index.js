@@ -26,6 +26,7 @@ const Index = () => {
                         <Link className="btn btn-primary mx-1" to="/Login">Login</Link>
                         <Link className="btn btn-primary mx-1" to="/Signup">SignUp</Link>
                         <Link className="btn btn-primary mx-1" to="/VideoAddition">Add Video</Link>
+                        <Link className="btn btn-primary mx-1" to="/Admin">Admin</Link>
                     </form>
                 </div>
             </div>

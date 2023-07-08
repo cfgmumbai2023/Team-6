@@ -9,6 +9,7 @@ import Home from "./screens/HomePage"
 import Login from "./screens/Login"
 import About from "./screens/About"
 import VideoAddition from "./screens/VideoAddition"
+import Admin from "./screens/Admin"
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/Signup" element={<SignUp />}></Route>
             <Route path="/Login" element={<Login />}></Route>
             <Route path="/VideoAddition" element = {<VideoAddition />}></Route>
+            <Route path="/Admin" element={<Admin />}></Route>
           </Routes>
         </div>
       </Router>
