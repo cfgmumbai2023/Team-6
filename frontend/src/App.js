@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/Signup" element={<SignUp />}></Route>
             <Route path="/Login" element={<Login />}></Route>
-            <Route path="/VideoAddition" element = {<VideoAddition />}></Route>
+            <Route path="/VideoAddition" element={<VideoAddition />}></Route>
             <Route path="/Admin" element={<Admin />}></Route>
             <Route path="/RunVideo" element={<RunVideo />}></Route>
           </Routes>
