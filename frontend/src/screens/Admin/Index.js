@@ -9,6 +9,7 @@ const Index = () => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value });
         console.log(e.target.name, e.target.value)
     }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (credentials.cpassword !== credentials.password) {
@@ -16,9 +17,43 @@ const Index = () => {
         }
         // if (credentials)
     }
+    const data = [
+        {
+            "description": "sfgtyui",
+            "name": "ahha",
+            "approved": "jhfrgf",
+            "class": "gcbyus",
+            "link": "www.google.com",
+            "tag": "ejbgucrsngnuk"
+        },
+        {
+            "description": "sfgtyui",
+            "name": "ahha",
+            "approved": "jhfrgf",
+            "class": "gcbyus",
+            "link": "www.google.com",
+            "tag": "ejbgucrsngnuk"
+        },
+        {
+            "description": "sfgtyui",
+            "name": "ahha",
+            "approved": "jhfrgf",
+            "class": "gcbyus",
+            "link": "www.twitter.com",
+            "tag": "ejbgucrsngnuk"
+        },
+        {
+            "description": "sfgtyui",
+            "name": "ahha",
+            "approved": "jhfrgf",
+            "class": "gcbyus",
+            "link": "www.google.com",
+            "tag": "ejbgucrsngnuk"
+        }
+    ]
     return (
         <div>
-            {data.map((temp)=><Card pep={temp}/>)}
+            {data.map((temp) => <Card pep={temp} />)}
         </div>
     )
 }

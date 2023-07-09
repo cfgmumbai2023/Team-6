@@ -5,9 +5,8 @@ import morgan from "morgan";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import { verifyToken } from "./middleware/auth.js";
 import authRoutes from "./routes/auth.js"
-import User from "./models/User.js";
+import videoRoutes from "./routes/video.js"
 
 const app = express();
 
@@ -24,6 +23,7 @@ app.use(cors());
 // LOGIN
 
 app.use('/auth', authRoutes);
+app.use('/video', videoRoutes);
 
 // SETUP MONGOOSE
 const PORT = process.env.PORT || 5002;

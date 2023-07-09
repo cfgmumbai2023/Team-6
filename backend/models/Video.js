@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import MongooseMap from 'mongoose-map';
 
 const VideoSchema = new mongoose.Schema({
     description: {
@@ -22,7 +21,7 @@ const VideoSchema = new mongoose.Schema({
         required: true,
     },
     link: {
-        type: URL,
+        type: String,
         required: true,
         unique: true,
     },
@@ -30,7 +29,7 @@ const VideoSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    class: {
+    grade: {
         type: String,
         required: true,
     },
@@ -40,5 +39,5 @@ const VideoSchema = new mongoose.Schema({
     }
 }
 )
-const User = mongoose.model("User", UserSchema);
-export default User;
+const Video = mongoose.model("Video", VideoSchema);
+export default Video;
