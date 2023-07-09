@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from '../../components/Header'
-import '../../components/Header.css'
-import img from '../../images/about-page/about.jpg'
+import Header from '../Components/Header'
+import img from '../images/about-page/about.jpg'
 
 function AboutUs() {
     return (
